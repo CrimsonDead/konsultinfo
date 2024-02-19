@@ -1,0 +1,1 @@
+export const API_URL = 'http://crimssondead-001-site4.ftempurl.com/api'
