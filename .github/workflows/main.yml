@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       
     - name: Sync files
-      uses: konsultinfo@konsultinfo.minsk.by/hosting2/konsultinfom
+      uses: koSamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.konsultinfo.minsk.by
+        server: konsultinfo@konsultinfo.minsk.by
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         server-dir: /
