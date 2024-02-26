@@ -19,4 +19,4 @@ jobs:
         server: konsultinfo@konsultinfo.minsk.by
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        server-dir: /hosting2/konsultinfom/konsultinfo.minsk.by/konsultinfo
+        server-dir: /prod.konsultinfo@konsultinfo.minsk.by/
