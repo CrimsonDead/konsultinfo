@@ -16,7 +16,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: www.konsultinfo.minsk.by
+        server: konsultinfo@konsultinfo.minsk.by
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        server-dir: /prod.konsultinfo.minsk.by/
+        server-dir: /hosting2/konsultinfom/konsultinfo.minsk.by/konsultinfo
