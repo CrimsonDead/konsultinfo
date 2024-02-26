@@ -7,17 +7,16 @@ on:
 
 jobs:
   web-deploy:
-    name: Deploy
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: Get latest code
+    - name: 🚚 Get latest code
       uses: actions/checkout@v3
-      
-    - name: Sync files
-      uses: koSamKirkland/FTP-Deploy-Action@v4.3.4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: konsultinfo@konsultinfo.minsk.by
+        server: www.konsultinfo.minsk.by
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        server-dir: /
-
+        server-dir: /prod.konsultinfo.minsk.by/
